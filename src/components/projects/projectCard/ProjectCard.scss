@@ -1,0 +1,64 @@
+.projectCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.projectCard a{
+    color: black;
+    text-decoration: none;
+}
+
+.projectCard a:hover{
+    opacity: 50%;
+}
+
+.imgContainer{
+    position: relative;
+}
+
+.imgContainer img {
+    height: 267px;
+    width: 367px;
+    position: relative;
+    z-index: 1;
+    transition: opacity 0.5s;
+    object-fit: contain;
+}
+
+.imgContainer:hover img{
+    opacity: 10%
+}
+.imgContainer div{
+    position: absolute;
+    z-index: 2;
+    width: 90%;
+    left: 15px;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight:500;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s;
+}
+
+.imgContainer:hover div{
+    opacity: 100%;
+    pointer-events: all;
+}
+
+.projectButtonsContainer{
+    display: flex;
+    column-gap: 10px;
+}
+
+h2 .css-i4bv87-MuiSvgIcon-root{
+    font-size: 1rem;
+}

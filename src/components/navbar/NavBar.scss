@@ -1,0 +1,35 @@
+@import '/src/styles/constants.scss';
+
+.navContainer {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    height: 65px;
+    align-items:center;
+    z-index: 10;
+}
+.navContainer a{
+    color: grey;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.navContainer a:hover{
+    color: lightgrey;
+}
+
+.linksContainer{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 10px;
+}
+
+#pageTitle{
+    font-size: 25px;
+    margin-left: 10px;
+    color: white;
+}

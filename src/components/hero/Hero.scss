@@ -1,0 +1,43 @@
+@import '/src/styles/constants.scss';
+
+.heroContainer h1{
+    font-size: calc(1.425rem + 2.1vw);
+}
+
+.heroContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: space-between;  
+}
+
+.buttonDark{
+    @include button;
+    background-color: black;
+    color: white;
+    margin-right: 10px;
+}
+
+.buttonDark:hover{
+    opacity: 75%;
+}
+
+.buttonLight{
+    @include button;
+    background-color:white;
+    color: grey;
+    border-color: black;
+    margin-left: 10px;
+}
+
+.buttonLight:hover{
+    background-color: lightgrey;
+    color:white;
+    border:none;
+}
